@@ -1,0 +1,70 @@
+<form>
+  <div id="contain" class="grid-container">
+
+   
+      <mat-form-field id="optionselect" class="grid-item">
+        <mat-label>Select an option</mat-label>
+        <mat-select id="optionselect" [(value)]="selected1">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field id="food" class="example-full-width grid-item">
+        <mat-label>Favorite food</mat-label>
+        <input matInput placeholder="Ex. Pizza" value="Sushi">
+      </mat-form-field>
+  
+      <mat-form-field class="example-full-width grid-item">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    
+      <mat-form-field id="datep" class="grid-item">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker1">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker  id="datep" #picker1></mat-datepicker>
+      </mat-form-field>
+         
+      <mat-form-field id="option2"  class="grid-item">
+        <mat-label>Select an option</mat-label>
+        <mat-select id="option2" [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field   class="example-full-width grid-item">
+        <mat-label>Favorite food</mat-label>
+        <input matInput id="food2" placeholder="Ex. Pizza" value="Sushi">
+      </mat-form-field>
+  
+      <mat-form-field  class="example-full-width grid-item">
+        <mat-label>Leave a comment</mat-label>
+        <textarea id="comment" matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    
+      <mat-form-field id="date2"  class="grid-item">
+        <mat-label id="date2">Choose a date</mat-label>
+        <input id="date2" matInput [matDatepicker]="picker">
+        <mat-hint id="date2">MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle id="date2" matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker id="date2" #picker></mat-datepicker>
+      </mat-form-field>
+ 
+  
+</div>
+<div class="grid-container2">
+<div id="btn" class="btn">
+  <button id="btnn" mat-raised-button color="primary">Submit</button>
+</div>
+</div>
+  </form>
+  <label  style="padding:0;margin:0;padding-top: 2px;color: red;font-size: 17px;position: absolute;" [style.left.px]="left"
+  [style.top.px]="top"  #mydiv  id="myDiv"> &#9700;</label> 

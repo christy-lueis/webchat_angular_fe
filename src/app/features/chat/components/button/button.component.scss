@@ -1,0 +1,11 @@
+.btn-btoon
+{
+    color: aliceblue;
+    background-color: rgb(0, 115, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    &:hover {
+        background-color: red;
+    }
+}

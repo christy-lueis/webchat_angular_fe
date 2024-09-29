@@ -1,0 +1,5 @@
+<p>gmaps works!</p>
+<div *ngIf="apiLoaded | async">
+    <google-map 
+    [zoom]="zoom" [options]="options"></google-map>
+  </div>

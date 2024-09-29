@@ -1,0 +1,161 @@
+// style.scss file
+$primary-color: rgb(198, 221, 162);
+$secondary-color: #ccc;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: $primary-color;
+  text-align: center;
+}
+
+p {
+  color: $secondary-color;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name {
+  width: 40%;
+  border: 1px solid $secondary-color;
+  padding: 10px;
+  margin-bottom: 2%;
+}
+
+#generate {
+  width: 20%;
+  background-color: $primary-color;
+  color:white;
+  padding: 10px;
+  border-color: $secondary-color;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgb(186, 230, 121);
+  }
+}
+
+#joindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  color:$secondary-color;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#join {
+  width: 100%;
+  background-color: $primary-color;
+  color:white;
+  border-color:$secondary-color;
+  padding: 10px;
+  margin-bottom: 3%;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover {
+    background-color: rgb(186, 230, 121);
+  }
+}
+
+a {
+  &:hover {
+    color: rgb(198, 221, 162);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+$primary-color: #333;
+$secondary-color: #555;
+$cta-color: #007BFF;
+$cta-hover-color: #0056b3;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.ad-container {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.text-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-content h1 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-content h2 {
+    color: $secondary-color;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.text-content p {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: $cta-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: $cta-hover-color;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+

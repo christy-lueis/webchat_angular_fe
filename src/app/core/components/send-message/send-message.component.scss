@@ -1,0 +1,21 @@
+label
+{
+    background-color:rgb(198, 221, 162);
+    height: auto;
+    width: auto;
+    float: left;
+    padding: 10px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: end;
+    margin-bottom: 10px;
+    width: 100%;
+}

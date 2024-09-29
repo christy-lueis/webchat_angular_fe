@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Welcome to Chat Online</h1>
+  <p>Please enter your name and click the button to generate a room.</p>
+  <div id="form">
+    <input type="text" [(ngModel)]="txtName" id="name" placeholder="Enter your name" required>
+    <button id="generate" *ngIf="newRoomid == ''" (click)="btnGenerate_click()">Generate Room</button>
+    <div id="joindiv" *ngIf="newRoomid != ''">
+      <button id="join" (click)="btnJoin_click()">Join Room</button>
+      <a routerLink="/chat">Create another Room</a>
+    </div>
+    <label> </label>
+  </div>
+
+</div>
+
+
+<app-button>

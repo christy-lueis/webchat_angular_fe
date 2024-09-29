@@ -1,0 +1,142 @@
+.chatbox {
+    width: 500px;
+    height: 80vh;
+    background: #fff;
+    padding: 25px;
+    margin: 20px auto;
+    box-shadow: 0 3px #ffffff;
+    box-sizing: border-box;
+}
+
+.chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+
+.chat-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chat-form textarea {
+    width: 75%;
+    height: 25px;
+    padding-right: 1%;
+}
+
+.chat-form button {
+    width: 25%;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    margin: 1%;
+    margin-top: 0%;
+    
+    color: white;
+
+    &:hover {
+        background-color: rgb(202, 238, 145);
+        box-shadow: 1px 1px 1px .1px white;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+$primary-color: #333;
+$secondary-color: #555;
+$cta-color: #007BFF;
+$cta-hover-color: #0056b3;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.ad-container {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.text-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.text-content h1 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.text-content h2 {
+    color: $secondary-color;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.text-content p {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: $cta-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: $cta-hover-color;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+

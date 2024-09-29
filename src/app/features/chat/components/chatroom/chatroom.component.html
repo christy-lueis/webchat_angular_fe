@@ -1,0 +1,35 @@
+
+<div style="display: flex;justify-content: center;align-items: center;">
+    <label>
+        {{RoomUrl}}
+    </label>
+</div>
+<div class="chatbox">
+    <div class="chatlogs">
+        <span *ngFor="let chat of chatMessages">
+
+
+            <app-receive-message *ngIf="chat.myMessage==false" [clientName]="chat.name"
+                [labelValue]="chat.message"></app-receive-message>
+
+            <app-send-message *ngIf="chat.myMessage==true" [labelValue]="chat.message"></app-send-message>
+        </span>
+    </div>
+    <div class="chat-form">
+        <textarea [(ngModel)]="txtchat"></textarea>
+        <button mat-raised-button color="primary"  (click)="btnSend_click()">Send</button>
+    </div>
+</div>
+
+
+<div class="ad-container">
+    <div class="text-content">
+        <h1>Auto</h1>
+        <h2>Assurance</h2>
+        <p>Drive with peace of mind, knowing you're covered every mile.</p>
+        <button class="cta-button">Learn more &rarr;</button>
+    </div>
+    <div class="image-content">
+        <img src="car-image.jpg" alt="Silver Car">
+    </div>
+</div>
